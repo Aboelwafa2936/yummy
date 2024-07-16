@@ -57,7 +57,7 @@ $(document).on('DOMContentLoaded', async ()=>{
         for (let i = 0; i < data.length; i++) {
             const element = data[i];
             mealContainer+=`<div class="card" data-id="${element.idMeal}">
-            <img src='${element.strMealThumb}' class="w-full rounded">
+            <img src='${element.strMealThumb}' class="w-full rounded" alt="${element.strMealThumb}">
             <div class="overlay">
                 <h2 class="card-title">${element.strMeal}</h2>
             </div>
@@ -79,7 +79,7 @@ $(document).on('DOMContentLoaded', async ()=>{
         for(let i = 0 ; i < data.length; i++){
             const element = data[i];
             categories += `<div class="card" data-category="${element.strCategory}">
-            <img src="${element.strCategoryThumb}">
+            <img src="${element.strCategoryThumb}" alt="${element.strCategoryThumb}">
             <div class="category-overlay">
             <h2 class="card-title">${element.strCategory}</h2>
             <p>${element.strCategoryDescription.slice(0, 150)}</p>
@@ -173,7 +173,7 @@ $(document).on('DOMContentLoaded', async ()=>{
         let infoContainer = `                
                 <div class="md:w-5/12">
                     <figure>
-                        <img src="${info.meals[0].strMealThumb}" class="w-2/3 mx-auto rounded" alt="">
+                        <img src="${info.meals[0].strMealThumb}" class="w-2/3 mx-auto rounded" alt="${info.meals[0].strMealThumb}">
                     </figure>
                     <h2 class="card-title text-center">${info.meals[0].strMeal}</h2>
                 </div>
@@ -288,7 +288,7 @@ $(document).on('input', '#userName, #userAge, #userEmail, #userPhone, #userPass,
         for(let i = 0 ; i < meals.length; i++){
             const element = meals[i];
             searchedMealsContainer += `<div class="card" data-id="${element.idMeal}">
-            <img src='${element.strMealThumb}' class="w-full rounded">
+            <img src='${element.strMealThumb}' class="w-full rounded" alt="${element.strMealThumb}">
             <div class="overlay">
                 <h2 class="card-title">${element.strMeal}</h2>
             </div>
@@ -308,7 +308,7 @@ $(document).on('input', '#userName, #userAge, #userEmail, #userPhone, #userPass,
         for(let i = 0 ; i < meals.length; i++){
             const element = meals[i];
             searchedMealsContainer += `<div class="card" data-id="${element.idMeal}">
-            <img src='${element.strMealThumb}' class="w-full rounded">
+            <img src='${element.strMealThumb}' class="w-full rounded" alt="${element.strMealThumb}">
             <div class="overlay">
                 <h2 class="card-title">${element.strMeal}</h2>
             </div>
